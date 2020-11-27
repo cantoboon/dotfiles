@@ -1,0 +1,14 @@
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  graph = log --all --decorate --oneline --graph
+ 
+[fetch]
+  prune = true
+  
+[rebase]
+  autosquash = true
+  
+[core]
+  editor = vim
