@@ -14,4 +14,10 @@
   editor = vim
 
 [push]
-  default = current
+  default = simple
+  
+[color]
+  ui = true
+
+[pager]
+  branch = false
