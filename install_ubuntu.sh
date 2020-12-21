@@ -50,6 +50,9 @@ if [ ! -d ~/.dotfiles ]; then
   git clone https://github.com/labooner/dotfiles ~/.dotfiles
   echo "${Green}dotfiles successfully cloned.${Color_Off}"
 else
+  cd ~/.dotfiles
+  git pull
+  cd -
   echo "${Green}dotfiles already exist.${Color_Off}"
 fi
 
