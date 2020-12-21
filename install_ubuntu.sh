@@ -1,7 +1,10 @@
 #!/bin/bash
 
+set -e
+
 echo "Setting up environment..."
 
+sudo apt update
 sudo apt install zsh -y
 
 # Install Oh my ZSH
