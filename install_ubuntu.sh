@@ -11,15 +11,15 @@ sudo apt install zsh -y
 
 # Install Oh my ZSH
 echo "Installing oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+[[ -d ~/.oh-my-zsh ]] || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install Powerline 10k
 echo "Installing Powerline 10k"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+[[ -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k ]] || git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Setup dotfiles
 echo "Cloning dotfiles repo"
-git clone https://github.com/labooner/dotfiles ~/.dotfiles
+[[ -d ~/.dotfiles ]] || git clone https://github.com/labooner/dotfiles ~/.dotfiles
 
 echo "Create symlinks for dot files"
 ln -sfn ~/.dotfiles/.vimrc ~/.vimrc
