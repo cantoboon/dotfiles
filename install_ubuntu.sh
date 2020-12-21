@@ -50,10 +50,10 @@ if [ ! -d ~/.dotfiles ]; then
   git clone https://github.com/labooner/dotfiles ~/.dotfiles
   echo "${Green}dotfiles successfully cloned.${Color_Off}"
 else
-  echo "${Green}dotfiles already exists.${Color_Off}"
+  echo "${Green}dotfiles already exist.${Color_Off}"
 fi
 
-echo "Create symlinks for dot files"
+echo "${Yellow}Create symlinks for dot files.${Color_Off}"
 ln -sfn ~/.dotfiles/.vimrc ~/.vimrc
 ln -sfn ~/.dotfiles/.gitignore ~/.gitignore
 ln -sfn ~/.dotfiles/.zshrc ~/.zshrc
