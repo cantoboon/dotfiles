@@ -61,6 +61,7 @@ echo "${Yellow}Create symlinks for dot files.${Color_Off}"
 ln -sfn ~/.dotfiles/.vimrc ~/.vimrc
 ln -sfn ~/.dotfiles/.gitignore ~/.gitignore
 ln -sfn ~/.dotfiles/.zshrc ~/.zshrc
+ln -sfn ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 
 # Setup SSH keys
 echo "Generate an SSH keypair: ssh -t ed25519 -C \"labooner.github.com\""
