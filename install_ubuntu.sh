@@ -20,9 +20,10 @@ White='\033[0;37m'        # White
 echo "${Blue}Setting up environment...${Color_Off}"
 echo ""
 
-echo "Installing zsh"
+echo "${Yellow}Installing zsh.${Color_Off}"
 sudo apt update
 sudo apt install zsh -y
+echo "${Green}zsh installed.${Color_Off}"
 
 # Install Oh my ZSH
 if [ ! -d ~/.oh-my-zsh ]; then
