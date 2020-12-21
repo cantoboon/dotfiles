@@ -50,10 +50,11 @@ if [ ! -d ~/.dotfiles ]; then
   git clone https://github.com/labooner/dotfiles ~/.dotfiles
   echo "${Green}dotfiles successfully cloned.${Color_Off}"
 else
+  echo "${Yellow}dotfiles already exist. Trying to update with git pull...${Color_Off}"
   cd ~/.dotfiles
   git pull
   cd -
-  echo "${Green}dotfiles already exist.${Color_Off}"
+  echo "${Green}Update complete.${Color_Off}"
 fi
 
 echo "${Yellow}Create symlinks for dot files.${Color_Off}"
