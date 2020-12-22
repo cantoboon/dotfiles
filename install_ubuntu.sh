@@ -28,7 +28,7 @@ echo "${Green}zsh installed.${Color_Off}"
 # Install Oh my ZSH
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "${Yellow}Installing oh-my-zsh.${Color_Off}"
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
   echo "${Green}oh-my-zsh already installed.${Color_Off}"
 else
   echo "${Green}oh-my-zsh is already installed.${Color_Off}"
@@ -68,3 +68,5 @@ echo "Generate an SSH keypair: ssh -t ed25519 -C \"labooner.github.com\""
 
 # Setup GPG keys
 echo "Generate a GPG key: gpg --full-generate-key"
+
+echo "Set the default shell with: chsh -s $(which zsh)"
