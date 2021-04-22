@@ -112,3 +112,4 @@ source $ZSH/oh-my-zsh.sh
 # =============== labooner customisations ===================
 
 export PATH=$PATH:/usr/local/go/bin:~/.cargo/bin:~/.local/bin
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
