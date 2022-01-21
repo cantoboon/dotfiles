@@ -4,6 +4,9 @@ syntax on
 " Display line numbers on the left
 set number
 
+" Highlight Search results
+set hlsearch
+
 "------------------------------------------------------------
 " Indentation options {{{1
 "
@@ -15,3 +18,6 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+
+" Tells vim to start scrolling 5 lines above/below
+set scrolloff=5
